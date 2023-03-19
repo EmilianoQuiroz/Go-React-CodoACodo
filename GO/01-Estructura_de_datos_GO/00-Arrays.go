@@ -23,4 +23,20 @@ func main(){
 	fmt.Println(numeros)
 	// Tambien podemos imprimir un indice especifico 
 	fmt.Println(numeros[3])
+
+
+	// Array con valores
+	nombres:= [3]string{"Juan", "pedro", "Luis"}
+
+	fmt.Println(nombres)
+
+	// Tambien podemos crear arrays sin definir la cantidad de elementos que tendra
+	colores:= [...]string{
+		"Rojo",
+		"Azul",
+		"Amarillo",
+	}
+
+	// Con "len" obtendremos la cantidad de elementos que contiene nuestro array
+	fmt.Println(colores, len(colores))
 }
